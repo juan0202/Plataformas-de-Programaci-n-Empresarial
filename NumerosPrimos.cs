@@ -17,7 +17,7 @@ namespace Ejercicio1Plataformas
 
         public static void generarPrimos(int[] vec1)
         {
-            int cont1 = 1, cont2 = 0;
+            int cont1 = 1, cont2 = 0,cont3 = 0;
             bool bandera = false;
 
             for (int i = 0; i < vec1.Length; i++)
@@ -32,10 +32,19 @@ namespace Ejercicio1Plataformas
                     }
                 }
                 
-                if (cont2 == 1)
+               
+              if(cont3 == 418)
                 {
-                   vec1[i] = cont1;
+                    break;
                 }
+                else
+                {
+                    if (cont2 == 1)
+                    {
+                        vec1[i] = cont1;
+                        cont3++;
+
+                    }
             }
         }
 
